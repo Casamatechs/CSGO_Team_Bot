@@ -7,7 +7,7 @@
 """
 
 import telebot
-import token.py
+from token import *
 
 bot = telebot.TeleBot(TOKEN, threaded=False)
 bot.skip_pending = True
