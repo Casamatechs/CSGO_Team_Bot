@@ -50,6 +50,7 @@ def notready_status(message):
 	if message.from_user.id in ppl_ready_id:
 		team -= 1
 		ppl_ready[ppl_ready.index(message.from_user.username)]='Empty'
+                ppl_ready_id[ppl_ready_id(message.from_user.username)]='Empty'
 		if team == 1:
 			bot.reply_to(message, 'You aren\'t ready anymore\n' + str(team) + ' person ready.')
 		elif team <= 0:
